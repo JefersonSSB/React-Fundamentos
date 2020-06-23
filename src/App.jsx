@@ -15,12 +15,20 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
+import Mega from "./components/mega/Mega";
 
 export default () => (
   <div className="App">
     <h1>Funtamento React</h1>
 
     <div className="Cards">
+      <Card titulo="Mega" color="#311">
+        <Mega />
+      </Card>
+      <Card titulo="Contador" color="#131">
+        <Contador numeroInicial={10} />
+      </Card>
       <Card titulo="Componenet Controlado" color="#856">
         <Input />
       </Card>
@@ -44,7 +52,7 @@ export default () => (
       <Card titulo="Repeticao 2" color="#880">
         <ListaProdutos></ListaProdutos>
       </Card>
-      <Card titulo="Repeticao" color="#880">
+      <Card titulo="Repeticao" color="#803">
         <ListaAlunos></ListaAlunos>
       </Card>
       <Card titulo="Familia" color="#888">
